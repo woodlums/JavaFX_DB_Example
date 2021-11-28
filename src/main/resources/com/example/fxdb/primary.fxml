@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxdb.PrimaryController">
+    <children>
+
+        <Button fx:id="primaryButton" layoutX="124.0" layoutY="31.0" onAction="#switchToSecondary" text="Switch to Secondary View" />
+        <ProgressBar fx:id="prog1" layoutX="100.0" layoutY="301.0" prefWidth="200.0" progress="0.0">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </ProgressBar>
+        <Button layoutX="174.0" layoutY="276.0" mnemonicParsing="false" onAction="#displayAlert" text="Button" />
+        <Label layoutX="166.0" layoutY="14.0" text="Primary View" />
+      <CheckBox fx:id="chk1" layoutX="27.0" layoutY="110.0" mnemonicParsing="false" text="CheckBox" onAction="#handleCheckbox"/>
+    </children>
+</Pane>
